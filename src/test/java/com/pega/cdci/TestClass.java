@@ -24,7 +24,14 @@ public class TestClass {
 
 	@Test
 	public void test2() {
+		System.out.println("starting test 2");
+		Assert.assertTrue(true);
 
+	}
+
+	@Test
+	public void test3() {
+		System.out.println("starting test3");
 		Assert.assertTrue(true);
 
 	}

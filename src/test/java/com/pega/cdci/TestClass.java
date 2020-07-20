@@ -17,6 +17,7 @@ public class TestClass {
 		driver.manage().window().maximize();
 
 		driver.get("https://automationtalks.com/");
+		System.out.println(driver.getTitle());
 
 	}
 

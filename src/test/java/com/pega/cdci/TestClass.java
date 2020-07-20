@@ -17,7 +17,20 @@ public class TestClass {
 		driver.manage().window().maximize();
 
 		driver.get("https://automationtalks.com/");
-		System.out.println(driver.getTitle());
+		System.out.println("test1----->" + driver.getTitle());
+
+	}
+
+	@Test
+	public void test2() {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\ghorh\\Documents\\seleniumbazinga\\Drivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+
+		driver.get("https://automationtalks.com/");
+		System.out.println("test2---->" + driver.getTitle());
 
 	}
 
